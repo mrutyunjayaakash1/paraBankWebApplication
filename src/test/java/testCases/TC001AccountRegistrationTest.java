@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import Pages.AccountRegistrationPage;
 import Pages.HomePage;
 
-public class TC001_AccountRegistrationTest extends baseClass{
+public class TC001AccountRegistrationTest extends baseClass{
 
 	public String Password;
 	public String userName;
@@ -30,7 +30,7 @@ public class TC001_AccountRegistrationTest extends baseClass{
 		Password =  AlphaNumeric();
 		accpage.setPassword(Password);
 		accpage.confirmPassword(Password);
-		accpage.confirmmRegisteration();
+//		accpage.confirmmRegisteration();
 		
 		String UserIdCreatedMessage = accpage.usernameConfirmationStatus();
 		Assert.assertEquals("Welcome "+userName, UserIdCreatedMessage);
