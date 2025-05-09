@@ -30,7 +30,7 @@ public class TC001AccountRegistrationTest extends baseClass{
 		Password =  AlphaNumeric();
 		accpage.setPassword(Password);
 		accpage.confirmPassword(Password);
-//		accpage.confirmmRegisteration();
+		accpage.confirmmRegisteration();
 		
 		String UserIdCreatedMessage = accpage.usernameConfirmationStatus();
 		Assert.assertEquals("Welcome "+userName, UserIdCreatedMessage);
