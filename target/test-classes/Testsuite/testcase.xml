@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+  <test name="RegressionTest">
+    <classes>
+      <class name="com.example.test.MyTestClass1"/>
+    </classes>
+  </test>
+  <test name="ParameterizedTest">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.example.com"/>
+    <classes>
+      <class name="com.example.test.MyTestClass4"/>
+    </classes>
+  </test>
+</suite>
